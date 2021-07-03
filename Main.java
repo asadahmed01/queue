@@ -20,7 +20,14 @@ public class Main {
     q.enqueue(30);
     q.enqueue(40);
     q.enqueue(50);
+
+    System.out.println(q.isFull());
     System.out.println(q);
+    System.out.println(q.dequeue());
+    System.out.println(q.dequeue());
+    // q.enqueue(50);
+    // System.out.println(q.isFull());
+    // System.out.println(q);
     // q.display();
     // q.dequeue();
     // System.out.println(q.dequeue());
