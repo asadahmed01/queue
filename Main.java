@@ -1,8 +1,7 @@
 import java.util.ArrayDeque;
+import java.util.Arrays;
 import java.util.Queue;
 import java.util.Stack;
-
-import javax.sound.sampled.ReverbType;
 
 public class Main {
   public static void main(String[] args) {
@@ -14,17 +13,16 @@ public class Main {
     // reverseQueue(q);
     // System.out.println(q);
 
-    var q = new ArrayQueue();
-    q.enqueue(10);
-    q.enqueue(20);
-    q.enqueue(30);
-    q.enqueue(40);
-    q.enqueue(50);
+    // var q = new ArrayQueue();
+    // q.enqueue(10);
+    // q.enqueue(20);
+    // q.enqueue(30);
+    // q.enqueue(40);
+    // q.enqueue(50);
 
-    System.out.println(q.isFull());
-    System.out.println(q);
-    System.out.println(q.dequeue());
-    System.out.println(q.dequeue());
+    // System.out.println(q.isFull());
+    // System.out.println(q);
+
     // q.enqueue(50);
     // System.out.println(q.isFull());
     // System.out.println(q);
@@ -32,6 +30,15 @@ public class Main {
     // q.dequeue();
     // System.out.println(q.dequeue());
     // q.display();
+
+    var q = new StackQueue();
+    q.enqueue(10);
+    q.enqueue(20);
+    q.enqueue(30);
+
+    System.out.println(q);
+    q.dequeue();
+    System.out.println(q);
   }
 
   public static void reverseQueue(Queue<Integer> q) {
