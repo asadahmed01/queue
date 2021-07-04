@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Stack;
 
 public class priorityQ {
   private int[] items = new int[5];
@@ -26,6 +27,17 @@ public class priorityQ {
     var item = items[--count];
     items[count] = 0;
     return item;
+  }
+
+  public void reverseUntilKthElement(int k) {
+    Stack<Integer> s = new Stack<>();
+    int start = 0;
+    for (int i = 0; i < k; i++) {
+      s.push(items[i]);
+    }
+    while (!s.isEmpty()) {
+      items[start++] = s.pop();
+    }
   }
 
   @Override

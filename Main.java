@@ -13,7 +13,7 @@ public class Main {
     pq.enqueue(2);
     // pq.enqueue(6);
     System.out.println(pq);
-    System.out.println(pq.remove());
+    pq.reverseUntilKthElement(3);
     System.out.println(pq);
   }
 
